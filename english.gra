@@ -137,6 +137,9 @@
 1 V[=1 tense=pres num=pl]	V[tense=stem] -0   # -0 is an "empty morpheme"
 1 V[=2 tense=inf]	to V[tense=stem]
 
+# ***
+1 V[=1 tense=pres num=mass]	V[tense=stem] -s
+
 # For the auxiliary verbs "have" and "be," we'll also put all the
 # (3rd-person) inflected forms directly into the grammar, so that the
 # poor user doesn't have to simulate a morphology program and type 
@@ -151,14 +154,20 @@
 1 V[head=have arg=np sem=possess tense=pastp]		had
 1 V[head=have arg=np sem=possess tense=presp]		having
 1 V[head=have arg=np sem=possess tense=pres num=sing]	has
+# ***
+1 V[head=have arg=np sem=possess tense=pres num=mass]	has
 1 V[head=have arg=np sem=possess tense=pres num=pl]	have
 
 1 V[head=be arg=pred sem="%pred %subj pred(subj)" tense=stem] 		be
 1 V[head=be arg=pred sem="%pred %subj pred(subj)" tense=past num=sing] 	was
+# ***
+1 V[head=be arg=pred sem="%pred %subj pred(subj)" tense=past num=mass] 	was
 1 V[head=be arg=pred sem="%pred %subj pred(subj)" tense=past num=pl] 	were
 1 V[head=be arg=pred sem="%pred %subj pred(subj)" tense=pastp] 		been
 1 V[head=be arg=pred sem="%pred %subj pred(subj)" tense=presp] 		being
 1 V[head=be arg=pred sem="%pred %subj pred(subj)" tense=pres num=sing] 	is
+# ***
+1 V[head=be arg=pred sem="%pred %subj pred(subj)" tense=pres num=mass] 	is
 1 V[head=be arg=pred sem="%pred %subj pred(subj)" tense=pres num=pl] 	are
 
 1 V[=1 arg=none tense=stem sem="%subj 1(subj)"] go    
@@ -206,6 +215,8 @@
 1 NP[=1 num=pl case=subj] they
 1 NP[=1 num=pl case=obj head=them sem=them] them
 
+# ***
+1 N[=1 num=mass] caviar
 
 # For nouns, we need a little morphology to handle plurals.
 
@@ -225,8 +236,17 @@
 
 # Determiners.
 
+# ***
+1 Det[=1 num=mass sem=all]      	 all 
+1 Det[=1 num=mass sem=some]      some  # same as "a"
+1 Det[=1 num=mass sem=the]       the  
+1 Det[=1 num=mass sem="%n the(%x n(x)^possess(x,him))"]  his 
+1 Det[=1 num=mass sem="%n the(%x n(x)^possess(x,her))"]  her
+1 Det[=1 num=mass sem="%n the(%x n(x)^possess(x,it))"]   its
+1 Det[=1 num=mass sem="%n the(%x n(x)^possess(x,them))"] their 
+
 1 Det[=1 num=sing sem=some] 	 a     # like an existential quantifier
-1 Det[=1 num=pl sem=all]      	 all    
+1 Det[=1 num=pl sem=all]      	 all   
 1 Det[=1 num=sing sem=all] 	 every # "all," "every": same sem but diff num
 1 Det[=1 num=sing sem=all] 	 each  # same as "every"
 1 Det[=1 num=pl sem=two] 	 two   

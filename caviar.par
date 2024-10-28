@@ -1,0 +1,18 @@
+(ROOT  (S  (NP  Papa) (VP  (V  (V  eat) -ed) (NP  (Det  the) (N  caviar)))) .)
+28.10160211232106
+(ROOT  (S  (NP  (Det  all) (N  caviar)) (VP  (V  is) (Adj  delicious))) .)
+23.543388772543892
+(ROOT  (S  (NP  Papa) (VP  (V  (V  eat) -s) (NP  (Det  his) (N  caviar)))) .)
+28.10160211232106
+(ROOT  (S  (NP  Papa) (VP  (V  (V  eat) -ed) (NP  (Det  a) (N  caviar)))) .)
+29.68541091842585
+(ROOT  (S  (NP  (Det  the) (N  caviar)) (VP  (V  (V  sleep) -s))) .)
+25.40072952073344
+(ROOT  (S  (NP  (Det  the) (N  caviar)) (VP  (V  (V  sleep) -0))) .)
+26.40072952073344
+(ROOT  (S  (NP  (Det  two) (N  (N  caviar) -s)) (VP  (V  (V  sleep) -ed))) .)
+30.792470442358578
+(ROOT  (S  (NP  (Det  all) (N  caviar)) (VP  (V  are) (Adj  fine))) .)
+24.543388772543892
+(ROOT  (S  (NP  (Det  the) (N  caviar)) (VP  (V  (V  eat) -ed) (NP  Papa))) .)
+28.10160211232106
