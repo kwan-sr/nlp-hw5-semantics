@@ -1,3 +1,7 @@
+##### MODIFIED english.gra to add mass nouns support ######
+##### Please search for "***" or "mass" to see all the added rules
+
+
 # This is a fragment of English grammar, somewhat imperfect in its
 # description.  To understand the file format, first look through
 # arith.gra, arith-infix.gra, and arith-typed.gra.  
